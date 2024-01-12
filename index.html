@@ -503,7 +503,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="footer-social-media-list-item">
               <a class="footer-social-media-link" href="">
                 <svg class="footer-social-media-svg" width="24" height="24">
@@ -520,6 +519,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-container">
+          <form class="footer-form" autocomplete="off">
+            <label class="footer-form-label">
+              <p class="footer-form-label-paragraph">Subscribe</p>
+              <input name="email" type="email" placeholder="E-mail" required />
+            </label>
+            <button class="footer-form-button" type="submit">
+              Subscribe
+              <svg class="footer-form-svg" width="24" height="24">
+                <use href="./images/icons.svg#icons-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -531,6 +544,51 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-parafraph">
+          <b>Leave your contacts and we will call you back</b>
+        </p>
+        <form class="modal-form" name="signup_form" autocomplete="off">
+          <div class="modal-form-container">
+            <label class="modal-form-label">
+              <p class="modal-form-paragraph">Name</p>
+              <svg class="modal-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input name="text" type="text" required />
+            </label>
+
+            <label class="modal-form-label">
+              <p class="modal-form-paragraph">Phone</p>
+              <svg class="modal-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input name="tel" type="tel" required />
+            </label>
+
+            <label class="modal-form-label">
+              <p class="modal-form-paragraph">Email</p>
+              <svg class="modal-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input name="email" type="email" required />
+            </label>
+          </div>
+
+          <label class="modal-form-label">
+            <p class="modal-form-paragraph">Comment</p>
+            <textarea
+              name="comment"
+              rows="6"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <p class="modal-form-checkbox-container">
+            <span class="modal-form-span"><input type="checkbox" /></span>
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </p>
+          <button class="studio-hero-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
