@@ -725,7 +725,7 @@ button.portfolio-filter-buttons:focus {
   background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
 
@@ -754,7 +754,7 @@ button.portfolio-filter-buttons:focus {
   color: #fff;
 
   /* Body Medium */
-  font-family: Roboto;
+  font-family: var(--body-text-font-family);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
