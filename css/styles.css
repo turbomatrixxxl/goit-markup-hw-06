@@ -941,9 +941,8 @@ button.close-modal-button:focus {
 }
 
 .visually-hidden {
-  /* visibility: hidden; */
-  outline: none;
-  border: none;
+  visibility: hidden;
+  cursor: pointer;
 }
 
 label {
@@ -960,7 +959,10 @@ label {
   color: #8e8f99;
 }
 
-.modal-form-checkbox-label-span {
+.modal-form-checkbox-span {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -971,18 +973,16 @@ label {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
-  opacity: 0;
 
-  transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-colour, border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked + .modal-form-checkbox-label-span {
+input[type="checkbox"]:checked
+  + modal-form-checkbox-label
+  .modal-form-checkbox-span {
   background-color: var(--link-hover-color);
   border: none;
   fill: var(--white-color);
-  opacity: 1;
 }
 
 .modal-form-checkbox-label-link {
