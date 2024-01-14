@@ -938,6 +938,7 @@ button.close-modal-button:focus {
 .modal-form-checkbox-container {
   display: flex;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .visually-hidden {
