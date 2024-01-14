@@ -857,9 +857,9 @@ button.close-modal-button:focus {
 }
 
 .modal-form-container {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 8px; */
+  gap: 8px;
   margin-bottom: 8px;
 }
 
